@@ -6362,7 +6362,7 @@ gatsby-recipes@^0.7.0:
     xstate "^4.9.1"
     yoga-layout-prebuilt "^1.9.6"
 
-gatsby-source-filesystem@^2.3.14, gatsby-source-filesystem@^2.9.0:
+gatsby-source-filesystem@^2.3.14:
   version "2.9.0"
   resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.9.0.tgz#df89799456dc7edc22c36ea6cc3060e25287bb48"
   integrity sha512-aKsb5GnnYwhAzCJZ9ChMWZqd1QhN6VGCEX3UAM/XuG6LSoqLmWyPUXo687n2ULpNPZfwb0X+HZRYzUhkje1UZA==
@@ -6381,15 +6381,34 @@ gatsby-source-filesystem@^2.3.14, gatsby-source-filesystem@^2.9.0:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-source-shopify@^3.2.19:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-shopify/-/gatsby-source-shopify-3.8.0.tgz#2bd8d7a8413f4eeb73a7ff9507c7edd3e6989327"
-  integrity sha512-VR1UqqDRZnT2CmB2Ky5yOw9nriBXtGLzVW8vNH9Szv9xLJTUECjsLMdITHQ9ktIydIqgbbSDISI6ooFmCMikcQ==
+gatsby-source-filesystem@^2.9.1:
+  version "2.9.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.9.1.tgz#25d603739d0ee818a72391f7711c3a6a0385c05e"
+  integrity sha512-irXzH0EK3Y+jSwzhpnxG02fzvXBfkFFsT7tvv5Gp3CosPNX5LWz14PiKYFlylPC0rj2Q/zR7sgHVvkIeqgs3vA==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    better-queue "^3.8.10"
+    chokidar "^3.4.3"
+    file-type "^16.0.0"
+    fs-extra "^8.1.0"
+    gatsby-core-utils "^1.8.0"
+    got "^9.6.0"
+    md5-file "^5.0.0"
+    mime "^2.4.6"
+    pretty-bytes "^5.4.1"
+    progress "^2.0.3"
+    valid-url "^1.0.9"
+    xstate "^4.14.0"
+
+gatsby-source-shopify@^3.8.0:
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-shopify/-/gatsby-source-shopify-3.8.1.tgz#b49f0be7db7ee11db37ec1670ce3a71756246f3b"
+  integrity sha512-kG4niNJKirzTnGYfL+HjRDuZkpO7EsSYxR+4TYsVzTl9Yeh6FA4CgW3v25YxILq408QjGCe8mfkkmtc/ZuHWTA==
   dependencies:
     babel-preset-gatsby-package "^0.10.0"
     chalk "^4.1.0"
     gatsby-node-helpers "^0.3.0"
-    gatsby-source-filesystem "^2.9.0"
+    gatsby-source-filesystem "^2.9.1"
     graphql-request "^1.8.2"
     lodash "^4.17.20"
     p-iteration "^1.1.8"
