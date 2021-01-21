@@ -1,14 +1,18 @@
 import React from 'react';
 
-import { CollectionTitleWrapper } from './styles';
+import { CollectionTitleWrapper, CollectionTileContent, Title, Description } from './styles';
 import BackgroundImage from 'gatsby-background-image';
 
-export function CollectionTile({ description, title, backgroundImage }) {
+export function CollectionTile({ description, title, backgroundImage, sale }) {
   return(
     <CollectionTitleWrapper>
       <BackgroundImage fluid={backgroundImage} />
-      <h1>{title}</h1>
-      <p>{description}</p>
+      <CollectionTileContent>
+        <div>
+          <Title sale={sale}>{title}</Title>
+          <Description sale={sale}>{description}</Description>
+        </div>
+      </CollectionTileContent>
     </CollectionTitleWrapper>
   )
 }
